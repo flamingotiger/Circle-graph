@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Circle from './Circle';
+import Test from './Test';
 
 class App extends Component{
   constructor(props){
@@ -19,6 +20,9 @@ class App extends Component{
       <div>
       {timeSort.map(time =>
         <Circle time={time} topTime={topTime} key={time}/>
+      )}
+      {timeSort.map(time =>
+        <Test time={time} topTime={topTime} key={time}/>
       )}
       </div>
     );
